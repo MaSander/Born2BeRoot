@@ -1,0 +1,25 @@
+apt install ssh
+apt install sudo
+
+## Trocar nome do hostname ##
+hostnamectl set-hostname msander42
+
+#user configs
+//change user password
+  passwd <USER NAME>
+
+//change user name
+  usermod -l <NEW NAME> <OLD NAME> 
+
+# Group configs
+//create group 'user42'
+  addgroup user42
+
+//add user 'marcelo' in group 'user42'
+  addgroup marcelo user42 
+
+## Helpers
+*executar em root
+shutdown -h now
+reboot
+halt
