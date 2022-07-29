@@ -14,9 +14,14 @@ hostnamectl set-hostname msander42
 # Group configs
 //create group 'user42'
   addgroup user42
-
+l
 //add user 'marcelo' in group 'user42'
   addgroup marcelo user42 
+
+# SSH configurate
+vim etc/ssh/sshd_config -> change port
+/etc/init.d/ssh restart -> reiniciar o ssh
+
 
 ## Helpers
 *executar em root
