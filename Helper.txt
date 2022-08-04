@@ -22,6 +22,7 @@ l
 vim etc/ssh/sshd_config -> change port
 /etc/init.d/ssh restart -> reiniciar o ssh
 
+systemctl status ssh
 
 ## Helpers
 *executar em root
