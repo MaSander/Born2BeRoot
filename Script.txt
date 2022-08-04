@@ -1,0 +1,11 @@
+addgroup user42
+
+addgroup msander user42
+
+apt install sudo
+
+sudo usermod -Ag sudo
+
+//
+
+//
