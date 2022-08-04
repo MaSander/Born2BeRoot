@@ -6,6 +6,8 @@ apt install sudo
 
 sudo usermod -Ag sudo
 
-//
+# Configure password 
+sudo vim /etc/login.defs
 
-//
+sudo apt instal libpam-pwquality
+sudo vim etc/pam.d/common-password
