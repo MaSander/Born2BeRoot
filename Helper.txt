@@ -24,6 +24,8 @@ vim etc/ssh/sshd_config -> change port
 
 systemctl status ssh
 
+sudo lsof -i -P -n | grep LISTEN
+
 ## Helpers
 *executar em root
 shutdown -h now
