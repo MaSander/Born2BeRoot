@@ -2,6 +2,8 @@ addgroup user42
 
 addgroup msander user42
 
+hostnamectl set-hostname "new-hostname" --pretty
+
 apt install sudo
 
 sudo usermod -Ag sudo
