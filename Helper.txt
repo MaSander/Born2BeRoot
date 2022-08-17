@@ -1,5 +1,5 @@
-apt install ssh
-apt install sudo
+dpkg -l | grep <SERVICE NAME>
+
 
 ## Trocar nome do hostname ##
 hostnamectl set-hostname msander42
