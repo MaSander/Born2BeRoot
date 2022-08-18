@@ -21,3 +21,10 @@ sudo ufw allow ssh
 sudo ufw allow 4242
 sudo ufw delete 1 # delete rule 22 port
 sudo ufw delete 2 # delete rule (v6) 22 port
+
+
+# Crontab
+sudo /etc/init.d/cron start
+
+sudo systemctl start cron
+sudo systemctl stop cron
