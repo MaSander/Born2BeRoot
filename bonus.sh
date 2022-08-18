@@ -30,3 +30,32 @@ sudo lighty-enable-mod fastcgi-php
 sudo service lighttpd force-reload
 
 #wordpress senha: a1b2c3@42senha
+
+
+
+
+sudo apt install libpam-google-authenticator
+google-authenticator
+
+sudo cp /etc/pam.d/sshd /etc/pam.d/sshd.bak
+
+sudo vim /etc/pam.d/sshd
+# ...
+# #Standard Un*x password updating.
+# @include common-password
+# auth required pam_google_authenticator.so
+
+
+sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
+
+sudo vim /etc/ssh/sshd_config
+# . . .
+# # Change to yes to enable challenge-response passwords (beware issues with
+# # some PAM modules and threads)
+# ChallengeResponseAuthentication yes
+# . . .
+
+sudo systemctl restart sshd.service
+
+
+
