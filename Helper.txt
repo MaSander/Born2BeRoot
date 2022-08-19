@@ -39,3 +39,6 @@ sudo systemctl disable cron
 shutdown -h now
 reboot
 halt
+
+
+certUtil -hashfile '.\VirtualBox VMs\BornToBeRoot\BornToBeRoot.vdi' sha1
