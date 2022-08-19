@@ -26,6 +26,14 @@ systemctl status ssh
 
 sudo lsof -i -P -n | grep LISTEN
 
+
+# Crontab
+sudo systemctl start cron
+sudo systemctl enable cron
+sudo systemctl stop cron
+sudo systemctl disable cron
+
+
 ## Helpers
 *executar em root
 shutdown -h now
